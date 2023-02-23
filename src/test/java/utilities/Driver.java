@@ -8,13 +8,17 @@ import org.openqa.selenium.edge.EdgeDriver;
 import java.time.Duration;
 
 public class Driver {
+    private Driver() {
+        // constracter private yapildi  boylece burdan obje olusturulamaz
+    }
+
     /*
-        Driver daki temel mantık extents yöntemiyle değil yani TestBase class'ına extent etmek yerine
-    Driver class'ından statik methodlar kullanarak driver oluştururuz.
-    1-İlk olarak public static WebDriver getDriver() methodu oluşturmak. Bu method bize bir driver getirecek
-    2-Driver'i kapatacağımız zaman da public static void closeDriver() methodu oluşturmak. İstediğimiz zaman
-    bu methodla driver'i kapatacağız
-     */
+            Driver daki temel mantık extents yöntemiyle değil yani TestBase class'ına extent etmek yerine
+        Driver class'ından statik methodlar kullanarak driver oluştururuz.
+        1-İlk olarak public static WebDriver getDriver() methodu oluşturmak. Bu method bize bir driver getirecek
+        2-Driver'i kapatacağımız zaman da public static void closeDriver() methodu oluşturmak. İstediğimiz zaman
+        bu methodla driver'i kapatacağız
+         */
     static WebDriver driver;
 
     public static WebDriver getDriver() {
