@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class PageKullanimi {
 
-    @Test
+    @Test(groups = "gp1")
     public void test() {
         Driver.getDriver().get("https://amazon.com");
 

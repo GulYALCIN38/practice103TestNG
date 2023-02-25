@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cross browser class calistirma">
+    <test name="Cross browser chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.Cross.CrossTest01"/>
+        </classes>
+    </test>
+    <test name="Cross browser edge">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="tests.Cross.Crosstest02"/>
+
+        </classes>
+    </test>
+</suite>

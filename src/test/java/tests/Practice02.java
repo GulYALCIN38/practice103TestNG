@@ -37,4 +37,12 @@ public class Practice02 {
         Driver.closeDriver();
         softAssert.assertAll();
     }
+
+    @Test
+    public void test2() {
+    }
+
+    @Test
+    public void test1() {
+    }
 }
