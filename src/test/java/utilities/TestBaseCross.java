@@ -16,7 +16,8 @@ public class TestBaseCross {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
     @AfterClass
-    public void tearDown() {
+    public void tearDown() throws InterruptedException {
+        Thread.sleep(2000);
         CrossDriver.quitDriver();
     }
 }

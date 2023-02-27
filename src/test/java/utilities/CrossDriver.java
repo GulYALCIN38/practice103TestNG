@@ -26,7 +26,7 @@ public class CrossDriver {
         //eger browser a bir deger atanmadi ise configreader daki browser calissin
 
         if (driver == null) {//eger driver bossa deger ata eger deger atanmissa driver i ayni sayfada return yap
-            switch (ConfigReader.getProperty("browser")){
+            switch (browser){
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();

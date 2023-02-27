@@ -10,5 +10,6 @@ public class Crosstest02 extends TestBaseCross {
     public void test02() {
 
         driver.get("https://www.techproeducation.com");
+
     }
 }
